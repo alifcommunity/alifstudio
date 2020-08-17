@@ -2815,7 +2815,7 @@ bool MyApp::OnInit()
 
 	#else
 
-		if (wxFileName::FileExists("/app/usr/share/aliflang/alifstudio.png")) // /usr/share/alifstudio/alifstudio.png
+		if (wxFileName::FileExists("/app/usr/share/aliflang/alifstudio.png")) // /appusr/share/alifstudio/alifstudio.png
 
 	#endif
 	{
@@ -2855,7 +2855,7 @@ bool MyApp::OnInit()
 
 		#else
 
-			if (bitmap.LoadFile("/usr/share/aliflang/alifstudio.png", wxBITMAP_TYPE_PNG))
+			if (bitmap.LoadFile("/app/usr/share/aliflang/alifstudio.png", wxBITMAP_TYPE_PNG))
 			{
 				wxSplashScreen* Alif_Studio_Splash = new wxSplashScreen(bitmap, 
 																		wxSPLASH_CENTRE_ON_SCREEN | wxSPLASH_TIMEOUT, // wxSPLASH_NO_TIMEOUT
