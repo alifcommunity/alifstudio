@@ -2320,7 +2320,7 @@ Window_Main :: Window_Main() :
 		#elif  __APPLE__
 			Fixed_Path = "/Applications";
 		#else
-			Fixed_Path = "/usr/local/bin/";
+			Fixed_Path = "/app/usr/local/bin/";
 		#endif
 
 		wxMessageBox(wxT("انتباه ! \n"
@@ -2619,7 +2619,7 @@ bool MyApp::OnInit()
 		SOURCE_FILE_NAME = "";			// When User dclick on files list
 		CURRENT_FILE_EXTENSION = "";	// When User dclick on files list
 		PATH_FULL_EXECUTABLE = "";		// When User click on Build.. SET_BINARY_PATH()
-		PATH_FULL_LOG = "";				// When User Click on Build..
+		PATH_FULL_LOG = "";				// When User Click on Build../app
 		PATH_DIRECTORY = "";			// When User dclick on Open
 
 		// -------------------------
@@ -2714,8 +2714,8 @@ bool MyApp::OnInit()
 		PATH_FULL_ALIF_COMPILER = INSTALL_PATH + "alif";
 		PATH_FULL_UPDATE = INSTALL_PATH + "mupdate";
 		NEW_UPDATER_PATH = INSTALL_PATH + "_mupdate";
-		PATH_FULL_PDF = "/usr/local/share/aliflang/Alif_Arabic_Programming_Language.pdf";
-		XML_Path = "/usr/local/share/alifstudio/alifstudio_theme.xml";
+		PATH_FULL_PDF = "/app/usr/local/share/aliflang/Alif_Arabic_Programming_Language.pdf";
+		XML_Path = "/app/usr/local/share/alifstudio/alifstudio_theme.xml";
 
 		// /var/tmp
 		wxFileName tfname(wxStandardPaths::Get().GetTempDir());
@@ -2738,11 +2738,11 @@ bool MyApp::OnInit()
 		string LINE;
 		bool LINE_ONE = true;
 
-		ifstream FILE_STREAM("/usr/local/share/aliflang/linux_alif_version.inf");
+		ifstream FILE_STREAM("/app/usr/local/share/aliflang/linux_alif_version.inf");
 
 		if (!FILE_STREAM.is_open())
 		{
-			wxMessageBox(wxT(" الملف التالي غير موجود \n \n /usr/local/share/aliflang/linux_alif_version.inf \n \n المرجو اعادت ثتبيت البرنامج \n او تحميله من الموقع الرسمي \n \n www.aliflang.org"));
+			wxMessageBox(wxT(" الملف التالي غير موجود \n \n /app/usr/local/share/aliflang/linux_alif_version.inf \n \n المرجو اعادت ثتبيت البرنامج \n او تحميله من الموقع الرسمي \n \n www.aliflang.org"));
 		}
 		else
 		{
@@ -2815,7 +2815,7 @@ bool MyApp::OnInit()
 
 	#else
 
-		if (wxFileName::FileExists("/usr/share/aliflang/alifstudio.png")) // /usr/share/alifstudio/alifstudio.png
+		if (wxFileName::FileExists("/app/usr/share/aliflang/alifstudio.png")) // /usr/share/alifstudio/alifstudio.png
 
 	#endif
 	{
@@ -3894,7 +3894,7 @@ bool Window_Main::COMPILE_NOW()
 		#elif  __APPLE__
 			Fixed_Path = "/Applications/Alif Studio.app";
 		#else
-			Fixed_Path = "/usr/local/bin/";
+			Fixed_Path = "/app/usr/local/bin/";
 		#endif
 
 		wxMessageBox(wxT("انتباه ! \n"
