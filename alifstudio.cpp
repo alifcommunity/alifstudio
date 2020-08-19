@@ -2619,7 +2619,7 @@ bool MyApp::OnInit()
 		SOURCE_FILE_NAME = "";			// When User dclick on files list
 		CURRENT_FILE_EXTENSION = "";	// When User dclick on files list
 		PATH_FULL_EXECUTABLE = "";		// When User click on Build.. SET_BINARY_PATH()
-		PATH_FULL_LOG = "";				// When User Click on Build../app
+		PATH_FULL_LOG = "";				// When User Click on Build..
 		PATH_DIRECTORY = "";			// When User dclick on Open
 
 		// -------------------------
@@ -2815,7 +2815,7 @@ bool MyApp::OnInit()
 
 	#else
 
-		if (wxFileName::FileExists("/app/usr/share/aliflang/alifstudio.png")) // /appusr/share/alifstudio/alifstudio.png
+		if (wxFileName::FileExists("/app/usr/share/aliflang/alifstudio.png")) // /app/usr/share/alifstudio/alifstudio.png
 
 	#endif
 	{
